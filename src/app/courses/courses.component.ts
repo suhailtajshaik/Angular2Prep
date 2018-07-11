@@ -5,16 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './courses.component.html',
   styleUrls: ['./courses.component.scss']
 })
-export class CoursesComponent implements OnInit {
+export class CoursesComponent {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-  isActive=true;
-  email="hello@domain.com";
-  
-  onSave(){
-    console.log(this.email);
+  cources = {
+    title:"The complete angular cource",
+    rating: 4.9745,
+    students: 30123,
+    price:190.95,
+    releaseDate: new Date(2018,3,1)
   }
 }
