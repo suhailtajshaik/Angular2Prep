@@ -10,6 +10,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { SummaryPipe } from './summary.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { PhoneFormatDirective } from './phone-format.directive';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     AppComponent,
     CoursesComponent,
     SummaryPipe,
-    FavoriteComponent
+    FavoriteComponent,
+    PhoneFormatDirective
   ],
   imports: [
     NgbModule.forRoot(),
